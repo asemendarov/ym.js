@@ -1,0 +1,14 @@
+{
+  "presets": [
+    ["@babel/preset-typescript", {}],
+    ["@babel/preset-env", {
+      "modules": false,
+      "useBuiltIns": "usage",
+      "forceAllTransforms": true,
+      "corejs": {
+        "version": 3,
+        "proposals": false
+      }
+    }]
+  ]
+}

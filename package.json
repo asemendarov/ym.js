@@ -1,0 +1,51 @@
+{
+  "name": "ym.js",
+  "version": "0.0.1",
+  "description": "Library wrapper for yandex metrika",
+  "keywords": [
+    "yandex",
+    "metrika",
+    "ymjs"
+  ],
+  "author": "Andrey Semendarov <asemendarov@yandex.ru>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asemendarov/ym.js"
+  },
+  "main": "lib/ym.js",
+  "module": "lib/ym.module.js",
+  "types": "lib/src/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "prebuild": "rimraf ./lib",
+    "build": "rollup -c",
+    "build:watch": "rollup -c -w"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-typescript": "^7.21.0",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-json": "^5.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.4.3",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.2",
+    "@typescript-eslint/parser": "^5.59.2",
+    "core-js": "^3.6.5",
+    "eslint": "^8.39.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.48.0",
+    "rollup-plugin-filesize": "^10.0.0",
+    "rollup-plugin-progress": "^1.1.2",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.5"
+  },
+  "license": "MIT"
+}
