@@ -1,6 +1,6 @@
 {
-  "name": "ym.js",
-  "version": "0.0.1",
+  "name": "@asemendarov/ym",
+  "version": "0.1.0",
   "description": "Library wrapper for yandex metrika",
   "keywords": [
     "yandex",
@@ -8,15 +8,22 @@
     "ymjs"
   ],
   "author": "Andrey Semendarov <asemendarov@yandex.ru>",
+  "homepage": "https://github.com/asemendarov/ym.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/asemendarov/ym.js"
+    "url": "https://github.com/asemendarov/ym.js.git"
   },
+  "bugs": {
+    "url": "https://github.com/asemendarov/ym.js/issues"
+  },
+  "license": "MIT",
   "main": "lib/ym.js",
   "module": "lib/ym.module.js",
   "types": "lib/src/index.d.ts",
   "files": [
-    "lib"
+    "lib",
+    "LICENSE",
+    "README.md"
   ],
   "scripts": {
     "prebuild": "rimraf ./lib",
@@ -46,6 +53,5 @@
     "rollup-plugin-progress": "^1.1.2",
     "tslib": "^2.5.0",
     "typescript": "^4.9.5"
-  },
-  "license": "MIT"
+  }
 }
